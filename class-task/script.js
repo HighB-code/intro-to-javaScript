@@ -43,11 +43,3 @@ const result = oneWord.concat(", secondWord");
 console.log(result);
 console.log(result.charAt(0));
 console.log(result.repeat(2));
-
-
-
-
-
-
-
-

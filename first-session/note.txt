@@ -685,3 +685,40 @@ console.log(firstWord.concat(" ", secondWord));
 // | "7".padStart(3, "0")                    | "007"              |
 // | "Hi".padEnd(5, "*")                     | "Hi***"            |
 // | "Tech".concat(" ", "Studio")            | "Tech Studio"      |
+
+// STRING CONCATENATION
+// Concatenation means joining strings together.
+// 1. Using the + Operator
+// JavaScript does not automatically add a space between the strings.
+// To include a space, add " ":
+const one = "Pounded";
+const two = "yam";
+const both = one + " " + two;
+console.log(both);
+
+// 2. Joining Text and Variables
+const course = "Fullstack web development";
+const academy = "Tech Studio";
+const stName = "Imran";
+// Imran studies fullstack web development at Tech Studio
+const info = stName + " studies " + course + " at " + academy + "."
+console.log(info);
+// Fixed text must be in quotation marks while the variables can stand without being in quotation marks. 
+
+// Using concat() 
+const nextInfo = stName.concat(" learns ", course, " at ", academy, ".")
+console.log(nextInfo);
+
+
+// 3. Joining Strings and Numbers that are stored in variables
+// When you join a string and a number using +, the number becomes part of the text.
+const girlName = "Indiana";
+const age1 = 34;
+// Indiana is 34 years old
+const intro = girlName + " is " + age1 + " years old."
+console.log(intro);
+
+// Using concat()
+const newIntro = girlName.concat(" is ", age1, " months old.");
+console.log(newIntro);
+// Unlike concatenation that uses (+) - addition sign - to link fixed text and variables, concat() uses comma to do the linking.
