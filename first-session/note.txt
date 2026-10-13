@@ -722,3 +722,32 @@ console.log(intro);
 const newIntro = girlName.concat(" is ", age1, " months old.");
 console.log(newIntro);
 // Unlike concatenation that uses (+) - addition sign - to link fixed text and variables, concat() uses comma to do the linking.
+
+// Template Literals (${})
+// Template Literals
+// Template literals let you write strings that include variables and calculations easily.
+// They use backticks (`), instead of single or double quotation marks.
+// Place a variable inside ${} to insert its value.
+// 1. Creating a Template Literal
+// EXAMPLE 1:
+// Amaka disappointed Psqaure many years ago.
+const gName = "Amaka";
+const artiste = "P-square";
+console.log(${gName} disappointed ${artiste} many years ago.);
+// We don't need to put fixed text in quotation marks. No need for addition sigh or comma to link values. You write it normally but with variables embedded in the curly braces preceded by a dollaer sign ($).
+
+// EXAMPLE 2:
+const mike = "Father figure";
+const johnBull = "Emmanuel";
+const rev = "Oreoluwa";
+const mrBean = "Imran";
+
+const result2 = ${mike} likes ${johnBull}, loves ${rev}, and bullies ${mrBean}.
+console.log(result2);
+
+// EXAMPLE 3. Including Calculations
+// You can put a calculation inside ${}:
+const digitOne = 30;
+const digitTwo = 4;
+// You need not to be taught that 30 multiplied by 4 equals 120.
+console.log(You need not to be taught that ${digitOne} multiplied by ${digitTwo} equals ${digitOne * digitTwo}.);
