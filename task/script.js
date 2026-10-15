@@ -153,3 +153,6 @@ console.log(Math.random());
 // because the bracket takes precedence before the multiplication symbol 
 
 // Reminder: Multiplication, division, and remainder have equal precedence and are evaluated from left to right. Addition and subtraction also have equal precedence and are evaluated from left to right.
+
+
+

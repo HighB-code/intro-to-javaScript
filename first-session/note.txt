@@ -463,7 +463,9 @@ console.log(space.toUpperCase());
 let goal = "TO BE A DEVELOPER";
 console.log(goal.toLowerCase());
 
-
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<S
 // 3. slice() - Extracts part of a string.
 // Syntax
 // string.slice(startIndex, endIndex)
@@ -942,3 +944,716 @@ console.log(Math.sqrt(nummTen));
 // Make a Number Positive — Math.abs()
 const nummm = -71;
 console.log(Math.abs(nummm));
+
+// TYPE COERCION AND TYPE CONVERSION
+// ----------------------------------------------------
+// TYPE COERCION:
+// Type coercion happens when JavaScript automatically converts a value from one data type to another during an operation.
+const valOne = "5";
+const valTwo = 2;
+console.log(valOne + valTwo);
+// Here, JavaScript converts 2 into a string and joins the two values.
+
+
+// A. When one operand is a string, + joins the values as strings.
+// Order matters because these operations happen from left to right:
+const valThree = "4";
+const valFour = 6;
+const valFive = 3;
+console.log(valFive * (valThree + valFour));
+console.log((valThree + valFour) / valFive);
+console.log(valThree * (valFour + valFive));
+
+// Operators such as -, *, and / convert numeric strings into numbers.
+const valSix = 2;
+console.log(valThree - valSix);
+
+
+// B. If the string cannot be converted into a valid number, the result of its multiplication is NaN, meaning Not a Number:
+const wordd = "Hi" ;
+console.log(wordd * valSix);
+
+//  Booleans in arithmetic
+// C. During numeric conversion, true becomes 1 and false becomes 0.
+console.log(true + 3);
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+// STATIC METHODS: 
+// Static methods are called directly on Number, rather than on a number variable.
+// Static methods can only be used on Number:
+// Number.isFinite()
+// Number.isInteger()
+// Number.isNan()
+// Number.isSafeInteger()
+// Number.parseInt()
+// Number.parseFloat()
+// PART OF YOUR ASSIGNMENT: READ UP ON STATIC METHODS WITH AT LEAST ONE EXAMPLE EACH. TO BE REVIEWD IN CLASS FIRST THING TOMORROW MORNING.
+
+// Explicit type conversion
+// When you deliberately convert a value, it is called explicit conversion.
+const nm = 436; //number
+const nmTwo = "322" //string
+
+// To perform addition, convert nmTwo into a number() function using Number():
+console.log(nm + nmTwo);
+// i. Number() — converts a value into a number.
+console.log(Number(nmTwo) + nm);
+
+// ii. String() — converts a value into a string.
+console.log(String(nm) + nmTwo);
+
+// iii. Boolean() — converts a value into true or false.
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(""));
+
+
+// ======JavaScript Number Methods======
+
+// JavaScript Number methods are built-in functions used to work
+// with numeric values, such as formatting numbers or converting
+// them into strings.
+// We have instance and static methods
+
+// INSTANCE METHODS:
+// Examples:
+// Note: These four methods below return strings.
+// They do not change the original number.
+// 1. toFixed() — formats a number with a specified number of decimal places. toFixed(2) is perfect for working with money. This targets decimal values.
+// EXAMPLE:
+const fix = 156.7895;
+console.log(fix.toFixed(2));
+console.log(fix.toFixed(3));
+
+// 2. toPrecision() — formats a number with a specified number of significant digits. This targets all number values.
+// EXAMPLE:
+const pre =  156.7895;
+console.log(pre.toPrecision(4));
+
+// 3. toString() — converts a number into a string.
+// EXAMPLE:
+const str = 284;
+console.log(str.toString());
+console.log(str.toString() + pre); // str is converted to string here.
+console.log(str + pre); //str not converted to string 
+
+// 4. toExponential() — expresses a number in exponential notation. toExponential() writes a number in exponential notation and returns a string. 
+// EXAMPLE: 
+const nuum = 6500;
+console.log(nuum.toExponential());
+console.log(nuum.toExponential(5));
+
+// 5. Number method - Number() function already discussed above.
+
+// valueOf() Method
+// valueOf() returns a number as a number.
+console.log(nuum.valueOf());
+
+// // =====COMPARISON OPERATORS========== 
+// // Every single comparison operator returns a BOOLEAN. it is used to compare two items basically
+// // there are types of comparison operators
+
+// // types of comparison operators
+// // 1. GREATER THAN (>) eg. (x > y):  : compares two variables or values and returns a boolean
+// // 2. LESS THAN (<) eg. (x < y) : compares two variables or values and returns a boolean
+// // 3. GREATER THAN OR EQUALS TO (>=) eg. (x >= y) : compares two variables or values and returns a boolean
+// // 4. LESS THAN OR EQUALS TO (<=) eg. (x <= y) : compares two variables or values and returns a boolean
+// // 5. STRICTLY EQUALS TO (===) eg. (x === y): This checks for both an equality in data type as well as the value "10" === 10
+// // 6. LOOSELY EQUALS TO (==) eg. (x == y): This checks for just an equality in just the value
+// // 7. NOT EQUAL (!=) eg. (x != y):  to check if two variables are not equal, it returns a boolean
+// // 8. Strict not equal (!==) "10" !== 10 
+
+// 1. GREATER THAN (>)
+// EXAMPLE:
+const great = 234;
+const gre = 455;
+console.log(great > gre);
+
+// 2. LESS THAN (<)
+// EXAMPLE:
+console.log(great < gre);
+
+// 3. GREATER THAN OR EQUALS TO
+// EXAMPLE:
+console.log(gre >= great);
+
+// 4. LESS THAN OR EQUALS TO (<=) 
+// EXAMPLE:
+console.log(great <= gre);
+
+// 5. STRICTLY EQUALS TO (===)
+// EXAMPLE:
+console.log(great === gre);
+const gr = 455;
+console.log(gr === gre);
+
+// 6. LOOSELY EQUALS TO (==) 
+// EXAMPLE:
+console.log(gr == gre);
+
+// 7. LOOSELY NOT EQUAL (!=)
+console.log(great != gr);
+
+// 8. Strict not equal (!==) 
+console.log(gre !== great);
+
+
+// LOGICAL OPERATOR
+// // Logical operators are used to combine or manipulate boolean values (true or false)
+
+// // Quick overview — the three operators
+
+// // && — AND
+
+// // || — OR
+
+// // ! — NOT (negation)
+
+
+// // 1. AND — &&: Definition: A && B is true only if both A and B are true.
+
+// // Truth table (boolean form)
+
+// // true && true → true
+
+// // true && false → false
+
+// // false && true → false
+
+// // false && false → false
+
+// EXAMPLE:
+//i. true && true → true
+const a = 34;
+const b = 20;
+const c = 11;
+const d = 20;
+const t = a > b;
+const u = c < d;
+const v = t && u;
+console.log(v);
+
+const e = 34;
+const f = 65;
+const g = 74;
+const h = 65;
+console.log(f === h && e < f);
+
+// ii. true && false → false
+console.log(e < f && f !== h);
+console.log(a > b && c > d);
+
+// iii. false && true → false
+console.log(f !== h && e < f);
+console.log(c > d && a > b);
+
+// iv. false && false → false
+console.log(f != h && c > f);
+console.log(c > d && a < b);
+
+
+// || — OR
+// Definition: A || B is true if at least one of A or B is true.
+
+// Truth table (boolean form)
+// true and false
+console.log(e < f || f !== h);
+console.log(a > b || c > d);
+
+// false and true
+console.log(f !== h || e < f);
+console.log(c > d || a > b);
+
+// iv. false && false → false
+console.log(f != h || c > f);
+console.log(c > d || a < b);
+
+
+// ! — NOT (negation)
+// Definition: !A converts A to boolean (if needed) and returns its inverse.
+let fatherFigure = true;
+console.log(!fatherFigure);
+
+let fatherFig = false;
+console.log(!fatherFig);
+
+
+// // OPERATOR PRECEDENCE & GROUPING
+// // Precedence (higher first):
+// // ! (NOT)
+
+// // && (AND)
+
+// // || (OR)
+
+
+// // ======= Conditional Statements in JavaScript ====
+// // Conditional statements let you control the flow of a program by making decisions based on certain conditions. They check conditions (which are true or false) and run specific blocks of code depending on the outcome.
+
+// // Types of Conditional Statements in JavaScript
+// // if statement
+
+// // if...else statement
+
+// // else...if statement
+
+// // Ternary operator (? :) — shorthand conditional
+
+// // switch statement
+
+
+// 1. if statement: Definition: Runs a block of code only if the condition is true.
+
+// EXAMPLE: 
+let song3 = "Buga Won";
+if (song3 === "Buga Won") {
+    console.log("That is Kizz Daniel's track.");
+    
+}
+
+let song4 = "Day by day";
+if (song4 !== "Buga Won") {
+    console.log("Not Kizz Daniel's track.");
+    
+}
+
+// 2. if...else statement
+// // Definition: Runs one block if condition is true, another block if false.
+// // syntax
+// // if (condition) {
+// //   // runs if condition is true
+// // } else {
+// //   // runs if condition is false
+// // }
+// Syntax
+// if (condition) {
+//    code to run if the condition is true
+// }
+
+// EXAMPLE:
+// with conole.log
+let aged = 18;
+if (aged >= 18) {
+    console.log("You are an adult");
+    
+} else {
+    console.log("You are still a child");
+    
+}
+
+// with msg
+let agedd = 15;
+let msg;
+if (agedd >= 18) {
+    msg = "You are a verified adult."
+} else {
+    msg = "You are still a small child."
+}
+console.log(msg);
+
+ 
+let isRaining = true;
+if (isRaining) {
+    console.log("Take an umbrella.");
+    
+} else {
+    console.log("You don't need an umbrella.");
+    
+}
+
+
+// 3  else...if statement
+
+// Definition: Allows checking multiple conditions, one after the other.
+// syntax
+// if (condition1) {
+//   // code if condition1 is true
+// } else if (condition2) {
+//   // code if condition2 is true
+// } else {
+//   // code if none are true
+// }
+
+// EXAMPLE: 
+let score = 20;
+if (score > 40 && score <= 49) {
+    console.log("Grade D");
+    
+} else if (score >= 50 && score <= 59){
+    console.log("Grade C");
+
+} else if (score >= 60 && score <= 69){
+    console.log("Grade B");
+    
+} else if (score >= 70 && score <= 100) {
+    console.log("Gradwe A");
+    
+} else {
+    console.log("Grade F");
+    
+}
+
+
+
+// CORRECTED VERSION
+let score = 20;
+if (score < 0 || score > 100) {
+    console.log("Invalid Score");
+    
+} else if (score <= 30) {
+    console.log("Grade F");
+    
+} else if (score <= 40) {
+    console.log("Grade E");
+    
+} else if (score < 50) {
+    console.log("Grade D");
+    
+} else if (score < 60) {
+    console.log("Grade C");
+    
+} else if (score < 70) {
+    console.log("Grade B");
+    
+} else {
+    console.log("Grade A");
+    
+}
+
+// BUILD A SIMPLE ARITHMETIC CALCULATOR
+const firstInput = Number(prompt("Enter the first number"));
+const operator = prompt("Enter an operator");
+const secondInput = Number(prompt("Enter second number"));
+
+if (firstInput === null ||
+    // firstInput.trim() === "" ||
+    Number.isNaN(firstInput)
+) {
+    alert("invalid first number");
+
+} else if (operator === null ||
+    operator.trim() === ""
+) {
+    alert("Please enter an operator");
+
+} else if(
+    operator !== "++" &&
+    operator !== "--" &&
+    secondInput === null || Number.isNaN(secondInput)
+) {
+  alert("Invalid second number");
+
+} else if (operator === "+") {
+    let ans = firstInput + secondInput
+    alert(ans);
+} else if (operator === "-") {
+    let ans = firstInput - secondInput
+    alert(ans);
+} else if (operator === "*") {
+    let ans = firstInput * secondInput
+    alert(ans);
+} else if (operator === "/") {
+    let ans = firstInput / secondInput
+    alert(ans);
+} else if (operator === "%") {
+    let ans = firstInput % secondInput
+    alert(ans);
+} else if (operator === "**") {
+    let ans = firstInput ** secondInput
+    alert(ans);
+} else if (operator === "++") {
+    let ans = ++firstInput
+    alert(ans);
+} else if (operator === "--") {
+    let ans = --firstInput
+    alert(ans);
+} else {
+    alert("Invalid operator")
+}
+
+
+
+
+// Ternary Operator (? :)
+
+//  Definition: A shorthand for if...else — good for simple conditions.
+
+// Syntax
+// condition ? expressionIfTrue : expressionIfFalse
+// EXAMPLE: 
+// 1.
+let agee = 12;
+let resultt = agee >= 18 ? "Eligible to vote and be voted for" : "Minor: not eligible to vote or be voted for.";
+console.log(resultt);
+
+// 2.
+let lights = false;
+let lightResult = lights ? "Up NEPA" : "NEPAAAA... Why?  "
+console.log(lightResult);
+
+// 3. DISCOUNT ELIGIBILITY
+let costs = 50000;
+let costsResult = costs >= 60000 ? "Eligible for discount" : "Not eligible for discount"
+console.log(costsResult);
+
+// ===== SWITCH STATEMENTS =====
+// A switch statement is a selection control flow structure used to execute different code blocks based on the value of a single expression, offering a cleaner alternative to multiple if-else statements. It evaluates an expression once, compares the result with multiple case values using strict equality, and executes the matching code block until a break is encountered. 
+
+// Key Components & Syntax
+// switch(expression): Evaluates a variable or expression, typically limited to integers, characters, or enumerated types in languages like C/C++.
+// case value:: Represents a possible match for the expression. The case keyword is mandatory.
+// break: Optional but recommended to stop execution and exit the switch. Without it, the code "falls through" to subsequent cases.
+// default: Optional label executed if no case matches the expression. 
+
+
+ // Syntax
+// switch(expression) {
+//   case x:
+//      code block
+//         break;
+//         case y:
+//       code block
+//        break;
+//       default:
+//       code block
+//  }
+// This is how it works:
+
+// // The switch expression is evaluated once.
+// // The value of the expression is compared with the values of each case.
+// // If there is a match, the associated block of code is executed.
+// // If there is no match, no code is executed.
+
+// EXAMPLE:
+// Use a switch statement with these cases:
+// Action	Output
+// "save"	"Your work has been saved."
+// "delete"	"Your work has been deleted."
+// "edit"	"You can now edit your work."
+// Any other value	"Unknown action."
+// EXAMPLE:
+// 1.
+const action = "delete";
+
+switch (action) {
+    case "save":
+        console.log("Your work has been saved.");
+        break;
+
+    case "delete":
+        console.log("Your work has been deleted.");
+        break;
+
+    case "edit":
+        console.log("You can now edit your work.");
+        break;
+
+    default:
+        console.log("Unknown action.");       
+        break;
+}
+
+// 2.
+const activity = "evening";
+
+switch (activity) {
+    case "morning":
+        console.log("Go to school");
+        break;
+
+    case "lunch-time":
+        console.log("Take a break");
+        break;
+
+    case "home-time":
+        console.log("Go home");
+        break;
+
+     case "evening":
+        console.log("Read your books and do your homework");
+        break;
+
+    default:
+        console.log("eat");
+        break;
+}
+
+// 1. INTRODUCTION TO LOOPS:
+// A loop in JavaScript is used to execute a block of code repeatedly, as long as a specified condition is met.
+// In simple terms, loops help us perform repetitive tasks without writing the same code multiple times.
+// Example: Without a loop
+// Suppose we want to display "Welcome to JavaScript!" five times.
+
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+
+
+// This works, but we are repeating the same statement unnecessarily. This can be easier done with a loop.
+
+// 2. Types of Loops in JavaScript
+// JavaScript provides several ways to repeat code.
+
+
+// Loop       | 	Purpose
+// for	      | 	 Repeats code, usually when we know how many times it should run.
+// while	  | 	 Repeats code while a condition remains true.
+// do...while | 	 Executes code at least once before checking the condition.
+// for...of	  | 	 Loops through values in an iterable, such as an array or string.
+// for...in	  | 	 Loops through enumerable property names (keys) of an object.
+
+
+// We will begin with the three basic loops: for, while, and do...while.
+
+// 3. The for Loop
+// The for loop is commonly used when we know how many times we want to repeat a task.
+
+// Syntax
+// for (initialization; condition; update) {
+//     // Code to execute
+// }
+
+
+// A for loop contains three important parts:
+// 1. Initialization: Creates a variable that controls the loop.
+// 2. Condition: Determines whether the loop should continue.
+// 3. Update: Changes the variable after each iteration.
+
+// EXAMPLE:
+// Display numbers from 1 to 5.
+for(let i = 1; i <= 5; i++) {
+    console.log(i);
+    
+}
+// Understanding the code
+// - let i = 1 means the loop starts counting from 1.
+// - i <= 5 means the loop continues while i is less than or equal to 5.
+// - i++ means increase i by 1 after each iteration.
+// - console.log(i) displays the current value.
+// Important: An iteration is one complete execution of the loop's body.
+
+// Countdown
+// 1. Display numbers from 5 to 1.
+for (let i = 5; i >= 1; i--) {
+    console.log(i);
+    
+}
+
+// 2. Display numbers from 5 to 2.
+// for (let i = 5; i >= 2; i-=2) {
+//     console.log(i);
+    
+// }
+
+// 3. Write a for loop that displays odd
+//    numbers from 1 to 15.
+for (let i = 1; i <= 15; i+=2) {
+    console.log(i);
+    
+}
+
+
+
+// 4. Write a for loop that displays even
+//    numbers from 0 to 16.
+for (let i = 0; i <= 16; i+=2 ) {
+    console.log(i);
+    
+}
+
+// 5. Total 
+// Calculate the sum of numbers from 1 to 5.
+let total = 0;
+
+for(let i = 1; i <= 5; i++) {
+    total = total + i
+    console.log(total);
+    
+}
+
+// SUMMARY
+// Explanation:
+// - First iteration: 0 + 1 = 1
+// - Second iteration: 1 + 2 = 3
+// - Third iteration: 3 + 3 = 6
+// - Fourth iteration: 6 + 4 = 10
+// - Fifth iteration: 10 + 5 = 15
+// The variable total keeps the accumulated sum.
+
+
+// 6.
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+// console.log("Welcome to JavaScript!");
+
+
+// Example: With a loop
+// trying with a for loop
+for (let i = 1; i <= 5; i++) {
+    console.log("Welcome to JavaScript!");
+    
+}
+
+
+// =============== BREAK AND CONTINUE IN A FOR LOOP
+// Using break and continue in a for Loop
+// We already know that a for loop executes a block of code repeatedly as long as its condition is true.
+
+// Normally, the loop continues until its condition becomes false.
+// However, JavaScript provides two important statements that allow us to change how a loop executes:
+// - break — Stops the loop completely.
+// - continue — Skips the current iteration and proceeds to the next one.
+
+// 2. The break Statement
+// What is break?
+// The break statement immediately stops a loop.
+// The break statement is used to immediately terminate a loop, even if the loop's condition is still true.
+// It is applied using if statement.
+
+// Example 1: Stop the loop when the number reaches 5 for a loop that counts from 1 to 10. 
+// for ( let i = 1; i <= 10; i++) {
+//     console.log(i);
+
+//     if (i === 5) {
+//         break;
+//     }
+
+//     // console.log(i);
+    
+// }
+
+// 3. The continue Statement
+// What is continue?
+// The continue statement skips the remaining code in the current iteration and moves to the next iteration.
+// The continue statement is used to skip the remaining statements in the current iteration without stopping the entire loop.
+// In simple terms, continue tells JavaScript:
+// Skip the rest of this iteration and proceed to the next one.
+// Also applied using if statement
+
+// EXAMPLE:
+// Example 1: Skip the loop when the number reaches 8 for a loop that counts from 4 to 13. 
+// for (let i = 4; i <= 13; i++) {
+
+//     if (i === 8) {
+//         continue;
+//     }
+    
+//     console.log(i);
+// }
+
+for (let i = 4; i <= 13; i++) {
+
+    if (i === 8) {
+        continue;
+    }
+
+    if (i === 11) {
+        break;
+    }
+    
+    console.log(i);
+}
