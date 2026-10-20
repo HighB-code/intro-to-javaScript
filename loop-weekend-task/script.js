@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Weekend Assignment — JavaScript Loops and Conditional Statements
+=======
+// // Share your GitHub repository link for review before our nex// Weekend Assignment — JavaScript Loops and Conditional Statements
+>>>>>>> a4184f8cf440c63ce9348c69c109f0ab5c4eda62
 
 // Complete the following tasks. Display your results in the console unless instructed otherwise.
 
@@ -294,4 +298,8 @@ console.log(reesult);
 
 // Use different variable names where necessary to avoid redeclaration errors.
 
+<<<<<<< HEAD
 // Complete the tasks before our next class and be ready to explain your code.
+=======
+// Complete the tasks before our next class and be ready to explain your code.t class.
+>>>>>>> a4184f8cf440c63ce9348c69c109f0ab5c4eda62
