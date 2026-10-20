@@ -2,7 +2,7 @@
 
 // Instructions: Create a folder named javascript-home-task containing these two files:
 
-// index.html
+// index.html 1
 
 // home-task.js
 
